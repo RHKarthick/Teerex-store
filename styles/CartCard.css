@@ -1,0 +1,97 @@
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  margin-bottom: 0.5rem;
+  border-radius: 3px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.cardImage {
+  height: 150px;
+  object-fit: cover;
+  width: 200px;
+}
+
+.cardImage img {
+  height: 100%;
+  width: 100%;
+}
+
+.cardDetail {
+  width: 400px;
+}
+
+.cardDetail > * {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.buttonGroup > button {
+  min-width: 32px;
+}
+.scrollable-div {
+  overflow: auto;
+  max-height: 80vh;
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+  }
+  .cardImage {
+    width: 150px;
+  }
+  .cardDetail {
+    width: 150px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonGroup {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .cardContainer {
+    flex-direction: column;
+    width: 60%;
+  }
+  .cardImage {
+    width: 150px;
+  }
+  .cardDetail {
+    width: 150px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonGroup {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media (max-width: 342px) {
+  .buttonGroup {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 65px;
+  }
+}

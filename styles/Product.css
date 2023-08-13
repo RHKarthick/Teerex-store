@@ -1,0 +1,31 @@
+.card {
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+}
+.parent {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 960px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.parentContainer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: "10px";
+}
+.productsContainer {
+  height: "69vh";
+  overflow: "auto";
+}

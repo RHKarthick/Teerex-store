@@ -1,0 +1,24 @@
+.product-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  width: 12.5rem;
+}
+.product-img {
+  height: 100px;
+  object-fit: cover;
+  width: 100%;
+}
+.product-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+}
+@media (max-width: 300px) {
+  .product-container {
+    width: 9rem;
+  }
+}
