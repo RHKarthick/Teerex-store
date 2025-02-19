@@ -1,0 +1,104 @@
+
+.heading{
+  font-style: italic;
+  font-weight: 500;
+}
+.filterCard {
+  padding: 20px;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.filterCardContainer {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding-top: 0px;
+  width: 20%; 
+  border-radius: 5px;
+  overflow: auto;
+  height: 70vh;
+}
+
+.filterOptions {
+  max-height: 70%; 
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterOptions label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.filterOptions input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+
+/* @media (max-width: 768px) {
+  .filterCardContainer {
+    width: 20%; 
+  }
+
+  .filterOptions label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filterCardContainer {
+    width: 30%;
+  }
+
+  .filterOptions label {
+    font-size: 12px;
+  }
+}
+@media (max-width: 300px) {
+  .filterCardContainer {
+    width: 40%; 
+  }
+
+  .filterOptions label {
+    font-size:11px;
+  }
+} */
+@media (max-width: 768px) {
+  .filterCardContainer {
+    width: 30%; /* Increased from 20% for better visibility */
+    /* height: 65vh;  */
+    /* Adjust height if needed */
+  }
+
+  .filterOptions label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filterCardContainer {
+    width: 40%; /* Increased from 30% for better fit */
+    /* height: 60vh; */
+  }
+
+  .filterOptions label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 300px) {
+  .filterCardContainer {
+    width: 50%; /* Increased from 40% for better usability */
+    /* height: 55vh; */
+    /* overflow-y: auto;  */
+    /* Ensures scrolling when needed */
+  }
+
+  .filterOptions label {
+    font-size: 11px;
+  }
+}

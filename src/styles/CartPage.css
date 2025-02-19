@@ -1,0 +1,11 @@
+.cartlist{
+   padding: 10px;
+   height: fit-content; 
+}
+.textStyle{
+   font-style: italic;
+   font-weight: 500;
+   font-size: 15px;
+   display: flex;
+   justify-content: center;
+ }

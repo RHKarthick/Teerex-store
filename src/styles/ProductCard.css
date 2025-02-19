@@ -1,0 +1,30 @@
+.product-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  /* -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); */
+  border-radius: 5px;
+  /* width: 12.5rem; */
+  max-width: 200px;
+}
+.product-img {
+  height: auto; /* Maintains aspect ratio */
+  max-height: 150px; /* Optional: Prevents it from becoming too large */
+  object-fit: cover;
+  width: 100%;
+}
+.product-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  /* gap: 5px; */
+}
+@media (max-width: 300px) {
+  .product-container {
+    max-width: 150px; 
+  }
+  .product-img {
+    max-height: 100px; /* Shrinks image for very small screens */
+  }
+}
+

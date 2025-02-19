@@ -1,0 +1,11 @@
+.productPage-container{
+height: 100vh;
+}
+.productBody-container{
+display: flex;
+justify-content: space-evenly;
+}
+.products-container{
+height: 70vh;
+overflow: auto;
+}
